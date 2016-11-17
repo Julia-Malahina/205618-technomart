@@ -2,48 +2,48 @@
 /*Cuprum*/
 @font-face {
   font-family: 'Cuprum-Regular';
-  src: url('Cuprum-Regular.eot');
-  src: url('Cuprum-Regular.woff2') format('woff2'),
-       url('Cuprum-Regular.woff') format('woff'),
-       url('Cuprum-Regular.ttf') format('truetype'),
-       url('Cuprum-Regular.svg#Cuprum-Regular') format('svg'),
-       url('Cuprum-Regular.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/cuprum/CuprumRegular/Cuprum-Regular.eot');
+  src: url('../fonts/cuprum/CuprumRegular/Cuprum-Regular.woff2') format('woff2'),
+       url('../fonts/cuprum/CuprumRegular/Cuprum-Regular.woff') format('woff'),
+       url('../fonts/cuprum/CuprumRegular/Cuprum-Regular.ttf') format('truetype'),
+       url('../fonts/cuprum/CuprumRegular/Cuprum-Regular.svg#Cuprum-Regular') format('svg'),
+       url('../fonts/cuprum/CuprumRegular/Cuprum-Regular.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cuprum-Bold';
-  src: url('Cuprum-Bold.eot');
-  src: url('Cuprum-Bold.woff2') format('woff2'),
-       url('Cuprum-Bold.woff') format('woff'),
-       url('Cuprum-Bold.ttf') format('truetype'),
-       url('Cuprum-Bold.svg#Cuprum-Bold') format('svg'),
-       url('Cuprum-Bold.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/cuprum/CuprumBold/Cuprum-Bold.eot');
+  src: url('../fonts/cuprum/CuprumBold/Cuprum-Bold.woff2') format('woff2'),
+       url('../fonts/cuprum/CuprumBold/Cuprum-Bold.woff') format('woff'),
+       url('../fonts/cuprum/CuprumBold/Cuprum-Bold.ttf') format('truetype'),
+       url('../fonts/cuprum/CuprumBold/Cuprum-Bold.svg#Cuprum-Bold') format('svg'),
+       url('../fonts/cuprum/CuprumBold/Cuprum-Bold.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cuprum-Italic';
-  src: url('Cuprum-Italic.eot');
-  src: url('Cuprum-Italic.woff2') format('woff2'),
-       url('Cuprum-Italic.woff') format('woff'),
-       url('Cuprum-Italic.ttf') format('truetype'),
-       url('Cuprum-Italic.svg#Cuprum-Italic') format('svg'),
-       url('Cuprum-Italic.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/cuprum/CuprumItalic/Cuprum-Italic.eot');
+  src: url('../fonts/cuprum/CuprumItalic/Cuprum-Italic.woff2') format('woff2'),
+       url('../fonts/cuprum/CuprumItalic/Cuprum-Italic.woff') format('woff'),
+       url('../fonts/cuprum/CuprumItalic/Cuprum-Italic.ttf') format('truetype'),
+       url('../fonts/cuprum/CuprumItalic/Cuprum-Italic.svg#Cuprum-Italic') format('svg'),
+       url('../fonts/cuprum/CuprumItalic/Cuprum-Italic.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Cuprum-BoldItalic';
-  src: url('Cuprum-BoldItalic.eot');
-  src: url('Cuprum-BoldItalic.woff2') format('woff2'),
-       url('Cuprum-BoldItalic.woff') format('woff'),
-       url('Cuprum-BoldItalic.ttf') format('truetype'),
-       url('Cuprum-BoldItalic.svg#Cuprum-BoldItalic') format('svg'),
-       url('Cuprum-BoldItalic.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/cuprum/CuprumBoldItalic/Cuprum-BoldItalic.eot');
+  src: url('../fonts/cuprum/CuprumBoldItalic/Cuprum-BoldItalic.woff2') format('woff2'),
+       url('../fonts/cuprum/CuprumBoldItalic/Cuprum-BoldItalic.woff') format('woff'),
+       url('../fonts/cuprum/CuprumBoldItalic/Cuprum-BoldItalic.ttf') format('truetype'),
+       url('../fonts/cuprum/CuprumBoldItalic/Cuprum-BoldItalic.svg#Cuprum-BoldItalic') format('svg'),
+       url('../fonts/cuprum/CuprumBoldItalic/Cuprum-BoldItalic.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -51,98 +51,108 @@
 /*PT Sans*/
 @font-face {
   font-family: 'PTSans-Regular';
-  src: url('PTSans-Regular.woff') format('woff'),
-       url('PTSans-Regular.svg#PTSans-Regular') format('svg');
+  src: url('../fonts/ptsans/PTSansRegular/PTSans-Regular.woff') format('woff'),
+       url('../fonts/ptsans/PTSansBold/PTSans-Web-Regular.ttf') format('truetype'),
+       url('../fonts/ptsans/PTSansRegular/PTSans-Regular.svg#PTSans-Regular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PT_Sans-Web-Regular';
-  src: url('PT_Sans-Web-Regular.eot');
-  src: url('PT_Sans-Web-Regular.woff2') format('woff2'),
-       url('PT_Sans-Web-Regular.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/ptsans/PTSansRegular/PT_Sans-Web-Regular.eot');
+  src: url('../fonts/ptsans/PTSansRegular/PT_Sans-Web-Regular.woff2') format('woff2'),
+       url('../fonts/ptsans/PTSansRegular/PT_Sans-Web-Regular.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PTSans-Bold';
-  src: url('PTSans-Bold.woff') format('woff'),
-       url('PTSans-Bold.ttf') format('truetype'),
-       url('PTSans-Bold.svg#PTSans-Bold') format('svg');
+  src: url('../fonts/ptsans/PTSansBold/PTSans-Bold.woff') format('woff'),
+       url('../fonts/ptsans/PTSansBold/PTSans-Bold.ttf') format('truetype'),
+       url('../fonts/ptsans/PTSansBold/PTSans-Bold.svg#PTSans-Bold') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PT_Sans-Web-Bold';
-  src: url('PT_Sans-Web-Bold.eot');
-  src: url('PT_Sans-Web-Bold.woff2') format('woff2'),
-       url('PT_Sans-Web-Bold.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/ptsans/PTSansBold/PT_Sans-Web-Bold.eot');
+  src: url('../fonts/ptsans/PTSansBold/PT_Sans-Web-Bold.woff2') format('woff2'),
+       url('../fonts/ptsans/PTSansBold/PT_Sans-Web-Bold.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PTSans-Italic';
-  src: url('PTSans-Italic.woff') format('woff'),
-       url('PTSans-Italic.ttf') format('truetype'),
-       url('PTSans-Italic.svg#PTSans-Italic') format('svg');
+  src: url('../fonts/ptsans/PTSansItalic/PTSans-Italic.woff') format('woff'),
+       url('../fonts/ptsans/PTSansItalic/PTSans-Italic.ttf') format('truetype'),
+       url('../fonts/ptsans/PTSansItalic/PTSans-Italic.svg#PTSans-Italic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PT_Sans-Web-Italic';
-  src: url('PT_Sans-Web-Italic.eot');
-  src: url('PT_Sans-Web-Italic.woff2') format('woff2'),
-       url('PT_Sans-Web-Italic.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/ptsans/PTSansItalic/PT_Sans-Web-Italic.eot');
+  src: url('../fonts/ptsans/PTSansItalic/PT_Sans-Web-Italic.woff2') format('woff2'),
+       url('../fonts/ptsans/PTSansItalic/PT_Sans-Web-Italic.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PTSans-BoldItalic';
-  src: url('PTSans-BoldItalic.woff') format('woff'),
-       url('PTSans-BoldItalic.ttf') format('truetype'),
-       url('PTSans-BoldItalic.svg#PTSans-BoldItalic') format('svg');
+  src: url('../fonts/ptsans/PTSansBoldItalic/PTSans-BoldItalic.woff') format('woff'),
+       url('../fonts/ptsans/PTSansBoldItalic/PTSans-BoldItalic.ttf') format('truetype'),
+       url('../fonts/ptsans/PTSansBoldItalic/PTSans-BoldItalic.svg#PTSans-BoldItalic') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'PT_Sans-Web-BoldItalic';
-  src: url('PT_Sans-Web-BoldItalic.eot');
-  src: url('PT_Sans-Web-BoldItalic.woff2') format('woff2'),
-       url('PT_Sans-Web-BoldItalic.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/ptsans/PTSansBoldItalic/PT_Sans-Web-BoldItalic.eot');
+  src: url('../fonts/ptsans/PTSansBoldItalic/PT_Sans-Web-BoldItalic.woff2') format('woff2'),
+       url('../fonts/ptsans/PTSansBoldItalic/PT_Sans-Web-BoldItalic.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
 
 /*А теперь стили*/
 body {
-  font-size: ;
-  line-height: ;
-  color: ;
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
   font-weight: normal;
-  font-family: "Cuprum";
+  font-family: "PT Sans";
 }
 
 h1 {
-  font-size: ;
-  line-height: ;
-  color: black;
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
   font-weight: normal;
   font-family: "Cuprum";
-  text-transform:uppercase;
+  text-transform: uppercase;
+}
+
+.popular-header h2 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  font-weight: normal;
+  font-family: "Cuprum";
+  text-transform: uppercase;
 }
 
 h2 {
-  font-size: ;
-  line-height: ;
-  color: black;
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
   font-weight: normal;
   font-family: "Cuprum";
-  text-transform:uppercase;
+  text-transform: uppercase;
 }
