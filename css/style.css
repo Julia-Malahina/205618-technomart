@@ -123,7 +123,7 @@
 
 /*А теперь стили*/
 /*Строим сеточку*/
-/*index.html*/
+/*common, header*/
 html,
 body {
   padding: 0;
@@ -227,6 +227,7 @@ body {
   background-color: #32425c;
 }
 
+/*index.html*/
 .promo {
   width: 100%;
   height: auto; /*410px*/
@@ -279,15 +280,14 @@ body {
   height: 316px; /*вместе с границей - 318*/
   float: left;
   margin-right: 20px;
+  margin-bottom: 20px;
 
   border: 1px dotted red;
 }
 
-.item:last-child {
+.popular-items .item:last-child {
   float: right;
   margin-right: 0;
-
-  border: 1px dotted red;
 }
 
 .popular-brands {
@@ -348,6 +348,95 @@ body {
   float: right;
 }
 
+/*catalog.html*/
+h1 {
+  margin-bottom: 20px;
+  background-color: #f2f6f8;
+}
+
+.filters {
+  width: 220px;
+  float: left;
+  margin-right: 20px;
+}
+
+.sorting-bar {
+  width: 700px;
+  float: right;
+}
+
+.top-bar {
+  height: 38px; /*in total*/
+  margin-bottom: 20px;
+  background-color: #f7f3ec;
+}
+
+.sorting-filters {
+  width: auto; /*поправим, когда будут стрелочки*/
+  height: auto;
+  float: left;
+  margin-right: 25px; /*45px*/
+}
+
+.filters-header {
+  width: auto;
+  height: auto;
+  float: left;
+  margin-right: 2px; /*после стрелочек*/
+}
+
+.sorting-filters-list {
+  width: 360px;
+  height: auto;
+  float: right;
+  margin-right: 0;
+}
+
+.sorting-filter {
+  width: 120px;
+  height: auto;
+  float: left;
+  margin-right: 0;
+}
+
+.show-methods {
+  width: auto;
+  height: auto;
+  float: right;
+}
+
+.items-block {
+  width: 700px;
+  height: auto;
+  float: right;
+}
+
+.items-block .item:nth-child(3n+0) {
+  float: right;
+  margin-right: 0;
+}
+
+.pagination {
+  width: 290px;
+  height: 38px;
+  float: left;
+  margin-right:
+}
+
+.pagination > li {
+  width: 38px;
+  height: 38px;
+  float: left;
+  margin-right: 12px;
+}
+
+.pagination > li.last-child {
+  width: 140px;
+  height: 38px;
+  margin-right: 0;
+}
+
+/*footer*/
 .footer-top {
   width: auto; /*100%*/
   height: auto; /*поправить потом*/
@@ -373,7 +462,6 @@ body {
   float: left;
   margin-right: 20px;
 }
-
 
 .footer-promo-menu {
   width: 525px;

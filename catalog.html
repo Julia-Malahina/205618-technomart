@@ -8,23 +8,22 @@
   <body>
     <header>
       <div class="top-header-block">
-        <div class="container">
+        <div class="container clearfix">
           <a class="logo" href="#">ТЕХНОМАРТ</a>
           <form class="item-search" action="#" method="get">
             <input type="text" name="search" value="" placeholder="Поиск:">
-            <button></button>
           </form>
-          <ul class="user-block">
-            <li class="bookmark-info">Закладки: 0</li>
-            <li class="cart-info">Корзина: 0</li>
-            <li>
-              <a class="order-btn" href="#">Оформить заказ</a>
-            </li>
-          </ul>
+          <div class="user-block">
+              <div class="bookmark-info">Закладки: 0</div>
+              <div class="cart-info">Корзина: 0</div>
+            <div class="order-btn">
+              <a href="#">Оформить заказ</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="bottom-header-block">
-        <div class="header-miscellaneous container">
+      <div class="miscellanious-header-block">
+        <div class="container clearfix">
           <div class="about">
             <p>Интернет-магазин строительных материалов и
               инструментов для ремонта</p>
@@ -38,19 +37,21 @@
             </div>
           </div>
           <div class="authorisation-block">
-            <div class="profile-block">
-              <a class="profile-link" href="#">  <!-- ?? -->
-                <img src="http://placehold.it/150x100" alt="user-icon">
-                Равшан Джамшутович
-              </a> <!-- или иконка пользователя всё-таки фон? -->
-              <a class="logout-link" href="#">Выход</a>
-            </div>
-            <div class="orders-block">
-              <a href="#">Мои заказы</a>
-              <a href="#">Личный кабинет</a>
-            </div>
+          	<div class="profile-block">
+          	  <a class="profile-link" href="#">  <!-- ?? -->
+          		<img src="http://placehold.it/150x100" alt="user-icon">
+          		Равшан Джамшутович
+          	  </a> <!-- или иконка пользователя всё-таки фон? -->
+          	  <a class="logout-link" href="#">Выход</a>
+          	</div>
+          	<div class="orders-block">
+          	  <a href="#">Мои заказы</a>
+          	  <a href="#">Личный кабинет</a>
+          	</div>
           </div>
         </div>
+      </div>
+      <div class="navigation-header-block">
         <nav class="header-main-navigation container">
           <a href="#">Главная</a>
           <a href="#">Компания</a>
@@ -70,7 +71,7 @@
         <li><a href="#">Перфораторы</a></li>
       </ul>
       <h1 class="container">ПЕРФОРАТОРЫ</h1>
-      <div class="container">
+      <div class="container clearfix">
         <div class="filters top-bar">
           <p class="filters-header">ФИЛЬТР:</p>
         </div>
@@ -89,7 +90,7 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container clearfix">
         <div class="filters">
           <form class="item-filters-list" action="#" method="get">
             <fieldset class="price-filter">
