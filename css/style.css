@@ -122,12 +122,328 @@
 }
 
 /*А теперь стили*/
+/*Строим сеточку*/
+/*index.html*/
+.top-header-block {
+  width: auto; /*потом поправим*/
+  height: auto; /*42px на самом деле*/
+  background-color: #293449;
+
+  border: 2px solid magenta;
+}
+
+.container {
+  width: 940px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+
+  border: 2px dashed yellow;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  width: 50px;
+  float: left;
+  margin-right: 20px;
+
+  border: 2px dotted red;
+}
+
+.item-search {
+  width: 100px;
+  float: left;
+  /*margin-left: 10px;*/
+  border: 2px dotted red;
+}
+
+.user-block {
+  width: 300px;
+  float: right;
+  margin-left: 10px;
+  border: 2px dotted red;
+}
+
+.miscellanious-header-block {
+  width: auto; /*потом уточнить*/
+  height: auto; /*потом уточнить*/
+  background-color: f1f5f7;
+
+  border: 2px solid magenta;
+}
+
+.about {
+  width: 250px;
+  float: left;
+  margin-left: 40px;
+  margin-right: 20px;
+
+  border: 2px dotted red;
+}
+
+.header-contacts {
+  width: 272px;
+  float: left;
+  margin-right: 25px;
+  border: 2px dotted red;
+}
+
+.authorisation-block {
+  width: 170px;
+  float: right;
+  margin-left: 20px;
+
+  border: 2px dotted red;
+}
+
+.navigation-header-block {
+  width: auto; /*потом уточнить*/
+  height: auto; /*потом уточнить*/
+  background-color: f1f5f7;
+
+  border: 2px solid magenta;
+}
+
+.header-main-navigation {
+  background-color: #32425c;
+
+  border: 2px dotted red;
+}
+
+.promo {
+  border: 2px dotted red;
+}
+
+.promo-top {
+  border: 2px dotted red;
+}
+
+.promo-material {
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+
+  border: 2px dotted red;
+}
+
+.promo-tools {
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+
+  border: 2px dotted red;
+}
+
+.promo-equipment {
+  width: 200px;
+  float: right;
+
+  border: 2px dotted red;
+}
+
+.promo-bottom {
+  border: 2px dotted red;
+}
+
+.promo .slider {
+  width: 550px;
+  margin-right: 20px;
+  float: left;
+
+  border: 2px dotted red;
+}
+
+.promo-discounts {
+  width: 200px;
+  float: right;;
+
+  border: 2px dotted red;
+}
+
+.promo-delivery {
+  width: 200px;
+  float: right;
+
+  border: 2px dotted red;
+}
+
+.popular-header {
+  width: auto;
+  height: auto;
+  background-color: #f7f3ec;
+
+  border: 2px solid magenta;
+}
+
+.popular-items {
+  border: 2px solid magenta;
+}
+
+.item {
+  width: 200px;
+  float: left;
+  margin-right: 20px;
+
+  border: 2px dotted red;
+}
+
+.item:last-child {
+  float: right;
+  margin-right: 0;
+
+  border: 2px dotted red;
+}
+
+.popular-brands {
+  border: 2px solid magenta;
+}
+
+.popular-brand {
+  width: 200px;
+  height: 100px;
+  float: left;
+  margin-right: 20px;
+
+  border: 2px dotted red;
+}
+
+.popular-brand:nth-child(4n) {
+  float: right;
+  margin-right: 0;
+
+  border: 2px dotted red;
+}
+
+.services {
+  width: auto; /*100%*/
+  height: auto; /*поправить потом*/
+  background-color: #f2f6f8;
+
+  border: 2px solid magenta;
+}
+
+.services-header {
+  width: 250px;
+
+  border: 2px dotted red;
+}
+
+.features {
+  width: 600px;
+
+  border: 2px dotted red;
+}
+
+.info-contacts {
+  border: 2px solid magenta;
+}
+
+.info-contacts-left {
+  width: 400px;
+  float: left;
+  margin-right: 20px;
+
+  border: 2px dotted red;
+}
+
+.info-contacts-right {
+  width: 400px;
+  float: right;
+
+  border: 2px dotted red;
+}
+
+.footer-top {
+  width: auto; /*100%*/
+  height: auto; /*поправить потом*/
+  background-color: #32425c;
+
+  border: 2px solid magenta;
+}
+
+.footer-logo {
+  width: 250px;
+  float: left;
+  margin-right: 20px;
+
+  border: 2px dotted red;
+}
+
+.footer-main-navigation {
+  width: 500px;
+  float: right;
+
+  border: 2px dotted red;
+}
+
+.address {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+  border: 2px dotted red;
+}
+
+
+.footer-promo-menu {
+  width: 500px;
+  float: right;
+
+  border: 2px dotted red;
+}
+
+.footer-bottom {
+  width: auto; /*100%*/
+  height: auto; /*поправить потом*/
+  background-color: #293449;
+
+  border: 2px solid magenta;
+}
+
+.copyright {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+
+  border: 2px dotted red;
+}
+
+.social {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+
+  border: 2px dotted red;
+}
+
+.feedback {
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+  
+  border: 2px dotted red;
+}
+
+.developer {
+  width: 500px;
+  float: right;
+
+  border: 2px dotted red;
+}
+
+/*Стили текста*/
 body {
   font-size: 13px;
   line-height: 24px;
   color: #000000;
   font-weight: normal;
   font-family: "PT Sans";
+
+  background-color: pink;
 }
 
 h1 {
