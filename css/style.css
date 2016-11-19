@@ -124,8 +124,13 @@
 /*А теперь стили*/
 /*Строим сеточку*/
 /*index.html*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
 .top-header-block {
-  width: auto; /*потом поправим*/
+  width: 100%; /*потом поправим*/
   height: auto; /*42px на самом деле*/
   background-color: #293449;
 
@@ -148,29 +153,35 @@
 }
 
 .logo {
-  width: 50px;
+  width: 220px;
   float: left;
-  margin-right: 20px;
-
-  border: 2px dotted red;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .item-search {
-  width: 100px;
+  width: 270px;
   float: left;
-  /*margin-left: 10px;*/
-  border: 2px dotted red;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .user-block {
-  width: 300px;
+  width: 450px;
   float: right;
-  margin-left: 10px;
-  border: 2px dotted red;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.user-block > div {
+  width: 150px;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .miscellanious-header-block {
-  width: auto; /*потом уточнить*/
+  width: 100%; /*потом уточнить*/
   height: auto; /*потом уточнить*/
   background-color: f1f5f7;
 
@@ -178,27 +189,30 @@
 }
 
 .about {
-  width: 250px;
+  width: 196px;
+  height: auto; /*текст умещается в 60 по высоте*/
   float: left;
-  margin-left: 40px;
-  margin-right: 20px;
-
-  border: 2px dotted red;
+  margin-left: 41px;/*44px*/
+  margin-right: 62px;/*65px*/
 }
 
 .header-contacts {
-  width: 272px;
+  width: 270px;
+  height: auto; /*70px*/
   float: left;
-  margin-right: 25px;
-  border: 2px dotted red;
+  margin-right: 59px;/*65px*/
+
+
 }
 
 .authorisation-block {
-  width: 170px;
+  width: 300px;
+  height: auto; /*70px*/
   float: right;
-  margin-left: 20px;
+  margin-left: 0;
+  margin-right: 0;
 
-  border: 2px dotted red;
+
 }
 
 .navigation-header-block {
@@ -211,92 +225,69 @@
 
 .header-main-navigation {
   background-color: #32425c;
-
-  border: 2px dotted red;
 }
 
 .promo {
-  border: 2px dotted red;
+  width: 100%;
+  height: auto; /*410px*/
+  margin-top: 60px;
+  margin-bottom: 20px; /*уточнить*/
 }
 
 .promo-top {
-  border: 2px dotted red;
+  margin-bottom: 14px;/*20px*/
 }
 
-.promo-material {
-  width: 200px;
-  float: left;
-  margin-right: 20px;
-
-  border: 2px dotted red;
+.promo-card {
+  width: 300px;
+  height: 123px;
 }
 
+.promo-material,
 .promo-tools {
-  width: 200px;
   float: left;
-  margin-right: 20px;
-
-  border: 2px dotted red;
+  margin-right: 14px;/*20px*/
 }
 
-.promo-equipment {
-  width: 200px;
+.promo-equipment,
+.promo-discounts,
+.promo-delivery {
   float: right;
-
-  border: 2px dotted red;
-}
-
-.promo-bottom {
-  border: 2px dotted red;
 }
 
 .promo .slider {
   width: 550px;
   margin-right: 20px;
   float: left;
-
-  border: 2px dotted red;
-}
-
-.promo-discounts {
-  width: 200px;
-  float: right;;
-
-  border: 2px dotted red;
-}
-
-.promo-delivery {
-  width: 200px;
-  float: right;
-
-  border: 2px dotted red;
 }
 
 .popular-header {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: auto;/*потом посмотрю*/
   background-color: #f7f3ec;
 
   border: 2px solid magenta;
 }
 
 .popular-items {
+  margin-top: 10px;
   border: 2px solid magenta;
 }
 
 .item {
-  width: 200px;
+  width: 218px; /*вместе с границей - 220*/
+  height: 316px; /*вместе с границей - 318*/
   float: left;
   margin-right: 20px;
 
-  border: 2px dotted red;
+  border: 1px dotted red;
 }
 
 .item:last-child {
   float: right;
   margin-right: 0;
 
-  border: 2px dotted red;
+  border: 1px dotted red;
 }
 
 .popular-brands {
@@ -304,19 +295,22 @@
 }
 
 .popular-brand {
-  width: 200px;
-  height: 100px;
+  width: 218px; /*вместе с границей - 220*/
+  height: 143px; /*вместе с границей - 145*/
   float: left;
   margin-right: 20px;
 
-  border: 2px dotted red;
+  border: 1px dotted red;
 }
 
-.popular-brand:nth-child(4n) {
+.popular-brand:nth-child(4n+0) {
   float: right;
   margin-right: 0;
+  border: 1px dotted red;
+}
 
-  border: 2px dotted red;
+.brands-first-row .popular-brand {
+  margin-bottom: 20px;
 }
 
 .services {
@@ -328,15 +322,13 @@
 }
 
 .services-header {
-  width: 250px;
-
-  border: 2px dotted red;
+  width: 410px;
+  height: auto;
 }
 
 .features {
-  width: 600px;
-
-  border: 2px dotted red;
+  width: 100%;
+  height: auto;
 }
 
 .info-contacts {
@@ -344,18 +336,16 @@
 }
 
 .info-contacts-left {
-  width: 400px;
+  width: 520px;
+  height: auto;
   float: left;
   margin-right: 20px;
-
-  border: 2px dotted red;
 }
 
 .info-contacts-right {
-  width: 400px;
+  width: 300px;
+  height: auto;
   float: right;
-
-  border: 2px dotted red;
 }
 
 .footer-top {
@@ -367,72 +357,60 @@
 }
 
 .footer-logo {
-  width: 250px;
+  width: 220px;
+  height: auto;
   float: left;
-  margin-right: 20px;
-
-  border: 2px dotted red;
 }
 
 .footer-main-navigation {
-  width: 500px;
+  width: 555px;
+  height: auto;
   float: right;
-
-  border: 2px dotted red;
 }
 
 .address {
-  width: 100px;
+  width: 325px;
   float: left;
   margin-right: 20px;
-  border: 2px dotted red;
 }
 
 
 .footer-promo-menu {
-  width: 500px;
+  width: 525px;
   float: right;
-
-  border: 2px dotted red;
 }
 
 .footer-bottom {
-  width: auto; /*100%*/
-  height: auto; /*поправить потом*/
+  width: 100%;
+  height: auto;
   background-color: #293449;
-
-  border: 2px solid magenta;
 }
 
 .copyright {
-  width: 100px;
+  width: 235px;
+  height: auto;
   float: left;
   margin-right: 20px;
-
-  border: 2px dotted red;
 }
 
 .social {
-  width: 100px;
+  width: 132px;
+  height: auto;
   float: left;
   margin-right: 20px;
-
-  border: 2px dotted red;
 }
 
 .feedback {
-  width: 100px;
+  width: 142px;
+  height: auto;
   float: left;
   margin-right: 20px;
-  
-  border: 2px dotted red;
 }
 
 .developer {
-  width: 500px;
+  width: 104px;
+  height: auto;
   float: right;
-
-  border: 2px dotted red;
 }
 
 /*Стили текста*/
@@ -442,8 +420,6 @@ body {
   color: #000000;
   font-weight: normal;
   font-family: "PT Sans";
-
-  background-color: pink;
 }
 
 h1 {
