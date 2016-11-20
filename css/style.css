@@ -129,12 +129,12 @@ body {
   padding: 0;
   margin: 0;
 }
+
 .top-header-block {
   width: 100%; /*потом поправим*/
-  height: auto; /*42px на самом деле*/
+  height: 42px; /*42px на самом деле*/
+  padding-top: 12px;
   background-color: #293449;
-
-  border: 2px solid magenta;
 }
 
 .container {
@@ -143,7 +143,7 @@ body {
   margin-left: auto;
   margin-right: auto;
 
-  border: 2px dashed yellow;
+  outline: 1px dashed yellow;
 }
 
 .clearfix::after {
@@ -181,62 +181,67 @@ body {
 }
 
 .miscellanious-header-block {
-  width: 100%; /*потом уточнить*/
-  height: auto; /*потом уточнить*/
-  background-color: f1f5f7;
-
-  border: 2px solid magenta;
+  width: 100%;
+  height: auto;
+  padding-top: 45px;
+  padding-bottom: 13px;
+  background-color: #f1f5f7;
 }
 
 .about {
   width: 196px;
-  height: auto; /*текст умещается в 60 по высоте*/
+  height: 70px; /*текст умещается в 60 по высоте*/
   float: left;
-  margin-left: 41px;/*44px*/
-  margin-right: 62px;/*65px*/
+  margin-left: 44px;
+  margin-right: 65px;
 }
 
 .header-contacts {
   width: 270px;
-  height: auto; /*70px*/
+  height: 70px;
   float: left;
-  margin-right: 59px;/*65px*/
-
-
+  margin-right: 65px;
 }
 
 .authorisation-block {
   width: 300px;
-  height: auto; /*70px*/
+  height: 70px;
   float: right;
   margin-left: 0;
   margin-right: 0;
-
-
 }
 
 .navigation-header-block {
-  width: auto; /*потом уточнить*/
-  height: auto; /*потом уточнить*/
-  background-color: f1f5f7;
+  width: 100%;
+  height: auto;
+  padding-top: 25px;
+  padding-bottom: 60px;
+  background-color: #f1f5f7;
+}
 
-  border: 2px solid magenta;
+.navigation-header-bar {
+    width: 100%;
+    height: 60px;
+    background-color: #32425c;
 }
 
 .header-main-navigation {
-  background-color: #32425c;
+  width: auto%
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*index.html*/
 .promo {
   width: 100%;
-  height: auto; /*410px*/
+  height: auto; /*410px ждем вёрстки слайдера*/
   margin-top: 60px;
-  margin-bottom: 20px; /*уточнить*/
+  margin-bottom: 55px;
 }
 
 .promo-top {
-  margin-bottom: 14px;/*20px*/
+  margin-bottom: 20px;
 }
 
 .promo-card {
@@ -247,7 +252,7 @@ body {
 .promo-material,
 .promo-tools {
   float: left;
-  margin-right: 14px;/*20px*/
+  margin-right: 20px;
 }
 
 .promo-equipment,
@@ -256,23 +261,70 @@ body {
   float: right;
 }
 
-.promo .slider {
-  width: 550px;
-  margin-right: 20px;
-  float: left;
+.promo-material {
+  background-color: #f6b22d;
 }
 
-.popular-header {
-  width: 100%;
-  height: auto;/*потом посмотрю*/
-  background-color: #f7f3ec;
+.promo-tools {
+  background-color: #4aafde;
+}
 
-  border: 2px solid magenta;
+.promo-equipment {
+  background-color: #cc79d1;
+}
+
+.promo-discounts {
+  margin-bottom: 20px;
+  background-color: #85d179;
+}
+
+.promo-delivery {
+  background-color: #f6b22d;
+}
+
+.promo .slider {
+  width: 620px;
+  margin-right: 20px;
+  float: left;
+
+  outline: 1px dashed red;
+}
+
+.popular-header-block {
+  width: 940px;
+  height: 89px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f7f3ec;
+}
+
+.popular-header-block h2 {
+  width: auto;
+  height: auto;
+  float: left;
+  margin-top: 29px;
+  margin-left: 30px;
+
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  font-weight: normal;
+  font-family: "Cuprum";
+  text-transform: uppercase;
+}
+
+.popular-header-block a {
+  width: auto;
+  height: 38px;
+  float: right;
+  margin-top: 25px;
+  margin-right: 30px;
 }
 
 .popular-items {
-  margin-top: 10px;
-  border: 2px solid magenta;
+  margin-top: 20px;
+
+  outline: 1px dashed black;
 }
 
 .item {
@@ -281,8 +333,7 @@ body {
   float: left;
   margin-right: 20px;
   margin-bottom: 20px;
-
-  border: 1px dotted red;
+  border: 1px solid #e5e5e5;
 }
 
 .popular-items .item:last-child {
@@ -291,7 +342,8 @@ body {
 }
 
 .popular-brands {
-  border: 2px solid magenta;
+  margin-top: 20px;
+  margin-bottom: 85px;
 }
 
 .popular-brand {
@@ -299,14 +351,12 @@ body {
   height: 143px; /*вместе с границей - 145*/
   float: left;
   margin-right: 20px;
-
-  border: 1px dotted red;
+  border: 1px solid #e5e5e5;
 }
 
 .popular-brand:nth-child(4n+0) {
   float: right;
   margin-right: 0;
-  border: 1px dotted red;
 }
 
 .brands-first-row .popular-brand {
@@ -314,16 +364,17 @@ body {
 }
 
 .services {
-  width: auto; /*100%*/
+  width: 100%;
   height: auto; /*поправить потом*/
+  padding-top: 32px;
+  padding-bottom: 25px;
   background-color: #f2f6f8;
-
-  border: 2px solid magenta;
 }
 
 .services-header {
   width: 410px;
-  height: auto;
+  height: 98px;
+  margin-bottom: 30px;
 }
 
 .features {
@@ -332,14 +383,15 @@ body {
 }
 
 .info-contacts {
-  border: 2px solid magenta;
+  height: auto;
+  padding-top: 52px;/*надо ещё разобраться с внутренними отступами будет*/
+  padding-bottom: 87px;
 }
 
 .info-contacts-left {
   width: 520px;
   height: auto;
   float: left;
-  margin-right: 20px;
 }
 
 .info-contacts-right {
@@ -438,11 +490,9 @@ h1 {
 
 /*footer*/
 .footer-top {
-  width: auto; /*100%*/
+  width: 100%;
   height: auto; /*поправить потом*/
   background-color: #32425c;
-
-  border: 2px solid magenta;
 }
 
 .footer-logo {
@@ -511,15 +561,6 @@ body {
 }
 
 h1 {
-  font-size: 30px;
-  line-height: 30px;
-  color: #32425c;
-  font-weight: normal;
-  font-family: "Cuprum";
-  text-transform: uppercase;
-}
-
-.popular-header h2 {
   font-size: 30px;
   line-height: 30px;
   color: #32425c;

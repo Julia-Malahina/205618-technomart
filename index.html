@@ -43,15 +43,19 @@
         </div>
       </div>
       <div class="navigation-header-block">
-        <nav class="header-main-navigation container">
-          <a href="#">Главная</a>
-          <a href="#">Компания</a>
-          <a href="#">Каталог</a>
-          <a href="#">Новости</a>
-          <a href="#">Спецпредложения</a>
-          <a href="#">Доставка</a>
-          <a href="#">Контакты</a>
-        </nav>
+        <div class="container">
+          <div class="navigation-header-bar">
+            <nav class="header-main-navigation">
+              <a href="#">Главная</a>
+              <a href="#">Компания</a>
+              <a href="#">Каталог</a>
+              <a href="#">Новости</a>
+              <a href="#">Спецпредложения</a>
+              <a href="#">Доставка</a>
+              <a href="#">Контакты</a>
+            </nav>
+          </div>
+        </div>
       </div>
     </header>
     <main>
@@ -98,11 +102,9 @@
           </div>
         </div>
       </div>
-      <div class="container clearfix">
-        <div class="popular-header">
-          <h2>Популярные товары:</h2>
-          <a class="catalog-btn" href="#">все поПулярные товары</a>
-        </div>
+      <div class="popular-header-block">
+        <h2>Популярные товары:</h2>
+        <a class="catalog-btn" href="#">все поПулярные товары</a>
       </div>
       <div class="popular-items container clearfix">
         <div class="item new">
@@ -154,11 +156,9 @@
               <a class="new-price" href="#">12500 Р.</a>
         </div>
       </div>
-      <div class="container">
-        <div class="popular-header">
-          <h2>Популярные ПРОИзводители:</h2>
-          <a class="catalog-btn" href="#">все производители</a>
-        </div>
+      <div class="popular-header-block">
+        <h2>Популярные ПРОИзводители:</h2>
+        <a class="catalog-btn" href="#">все производители</a>
       </div>
       <div class="popular-brands container clearfix">
         <div class="brands-first-row">
@@ -199,48 +199,48 @@
         </div>
       </div>
       <div class="services">
-          <div class="container">
-            <div class="services-header">
-              <h2>Сервисы</h2>
-              <p>Хороший интернет-магазин отличается от плохого не только
-                ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки
-                приятными.
+        <div class="container">
+          <div class="services-header">
+            <h2>Сервисы</h2>
+            <p>Хороший интернет-магазин отличается от плохого не только
+              ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки
+              приятными.
+            </p>
+          </div>
+          <div class="features">
+            <select name="features-menu">
+              <option value="delivery" selected>Доставка</option>
+              <option value="guarantee">Гарантия</option>
+              <option value="credit">Кредит</option>
+            </select>
+            <div class="delivery">
+              <h3>Доставка</h3>
+              <p>
+                Мы с удовольствием доставим ваш товар прямо к вашему
+                подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
+                поднимая его на ваш на этаж!
               </p>
             </div>
-            <div class="features">
-              <select name="features-menu">
-                <option value="delivery" selected>Доставка</option>
-                <option value="guarantee">Гарантия</option>
-                <option value="credit">Кредит</option>
-              </select>
-              <div class="delivery">
-                <h3>Доставка</h3>
-                <p>
-                  Мы с удовольствием доставим ваш товар прямо к вашему
-                  подъезду совершенно бесплатно! Ведь мы неплохо заработаем,
-                  поднимая его на ваш на этаж!
-                </p>
-              </div>
-              <div class="guarantee">
-                <h3>Гарантия</h3>
-                <p>
-                  Если купленный у нас товар поломается или заискрит,
-                  а также в случае пожара, спровоцированного его возгаранием,
-                  вы всегда можете быть уверены в нашей гарантии. Мы обменяем
-                  сгоревший товар на новый. Дом уж восстановите как-нибудь
-                  сами.
-                </p>
-              </div>
-              <div class="credit">
-                <h3>Кредит</h3>
-                <p>
-                  Залезть в долговую яму стало проще!
-                  Кредитные консультанты придут вам на помощь.
-                </p>
-                <a class="catalog-btn" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
-              </div>
+            <div class="guarantee">
+              <h3>Гарантия</h3>
+              <p>
+                Если купленный у нас товар поломается или заискрит,
+                а также в случае пожара, спровоцированного его возгаранием,
+                вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                сгоревший товар на новый. Дом уж восстановите как-нибудь
+                сами.
+              </p>
+            </div>
+            <div class="credit">
+              <h3>Кредит</h3>
+              <p>
+                Залезть в долговую яму стало проще!
+                Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="catalog-btn" href="#">ОТПРАВИТЬ ЗАЯВКУ</a>
             </div>
           </div>
+        </div>
       </div>
       <div class="info-contacts container clearfix">
         <article class="info-contacts-left">
