@@ -142,8 +142,6 @@ body {
   height: auto;
   margin-left: auto;
   margin-right: auto;
-
-  outline: 1px dashed yellow;
 }
 
 .clearfix::after {
@@ -286,8 +284,6 @@ body {
   width: 620px;
   margin-right: 20px;
   float: left;
-
-  outline: 1px dashed red;
 }
 
 .popular-header-block {
@@ -323,8 +319,6 @@ body {
 
 .popular-items {
   margin-top: 20px;
-
-  outline: 1px dashed black;
 }
 
 .item {
@@ -402,7 +396,10 @@ body {
 
 /*catalog.html*/
 .breadcrumbs > li {
-    display: inline-block;
+  width: auto; /*исправить после появления иконок*/
+  height: auto;
+  float: left;
+  margin-right: 22px;
 }
 
 .main-header-block {
@@ -533,6 +530,13 @@ body {
   float: right;
 }
 
+.footer-main-navigation > li {
+  width: auto; /*потом исправим*/
+  height: auto;
+  float: left;
+  margin-right: 2px; /*потом подберу*/
+}
+
 .address {
   width: 325px;
   float: left;
@@ -542,6 +546,13 @@ body {
 .footer-promo-menu {
   width: 525px;
   float: right;
+}
+
+.footer-promo-menu > li {
+  width: auto; /*потом исправим*/
+  height: auto;
+  float: left;
+  margin-right: 2px; /*потом подберу*/
 }
 
 .footer-bottom {
