@@ -8,23 +8,22 @@
   <body>
     <header>
       <div class="top-header-block">
-        <div class="container">
+        <div class="container clearfix">
           <a class="logo" href="#">ТЕХНОМАРТ</a>
           <form class="item-search" action="#" method="get">
             <input type="text" name="search" value="" placeholder="Поиск:">
-            <button></button>
           </form>
-          <ul class="user-block">
-            <li class="bookmark-info">Закладки: 0</li>
-            <li class="cart-info">Корзина: 0</li>
-            <li>
-              <a class="order-btn" href="#">Оформить заказ</a>
-            </li>
-          </ul>
+          <div class="user-block">
+              <div class="bookmark-info">Закладки: 0</div>
+              <div class="cart-info">Корзина: 0</div>
+            <div class="order-btn">
+              <a href="#">Оформить заказ</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="bottom-header-block">
-        <div class="header-miscellaneous container">
+      <div class="miscellanious-header-block">
+        <div class="container clearfix">
           <div class="about">
             <p>Интернет-магазин строительных материалов и
               инструментов для ремонта</p>
@@ -42,22 +41,22 @@
             <a class="auth-btn" href="#">Регистрация</a>
           </div>
         </div>
+      </div>
+      <div class="navigation-header-block">
         <nav class="header-main-navigation container">
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
+          <a href="#">Главная</a>
+          <a href="#">Компания</a>
+          <a href="#">Каталог</a>
+          <a href="#">Новости</a>
+          <a href="#">Спецпредложения</a>
+          <a href="#">Доставка</a>
+          <a href="#">Контакты</a>
         </nav>
       </div>
     </header>
     <main>
-      <div class="promo container">
-        <div class="promo-top">
+      <div class="promo">
+        <div class="promo-top container clearfix">
           <div class="promo-card promo-material new">
             <p>Материалы</p>
             <a class="promo-card-btn" href="#">на любой вкус</a>
@@ -71,12 +70,12 @@
             <a class="promo-card-btn" href="#">для стройки</a>
           </div>
         </div>
-        <div class="promo-bottom">
+        <div class="promo-bottom container clearfix">
           <div class="slider">
             <img class="slide-1" src="img/background/slider-1.jpg" alt="">
             <div class="slider-header">
               <p>Перфораторы</p>
-              <p>Настроящие мужские игрушки</p>
+              <p>Настоящие мужские игрушки</p>
             </div>
             <a class="previous-slide" href="#">
               <img src="http://placehold.it/150x100" alt="">
@@ -99,12 +98,14 @@
           </div>
         </div>
       </div>
-      <div class="popular-header container">
-        <h2>Популярные товары:</h2>
-        <a class="catalog-btn" href="#">все поПулярные товары</a>
+      <div class="container clearfix">
+        <div class="popular-header">
+          <h2>Популярные товары:</h2>
+          <a class="catalog-btn" href="#">все поПулярные товары</a>
+        </div>
       </div>
-      <div class="popular-items container">
-        <div class="popular-item new">
+      <div class="popular-items container clearfix">
+        <div class="item new">
           <div class="item-img">
             <img src="img/content/long-drill.jpg" alt="">
           </div>
@@ -116,7 +117,7 @@
           <p class="old-price">32500 Р.</p>
           <a class="new-price" href="#">25500 Р.</a>
         </div>
-        <div class="popular-item">
+        <div class="item">
           <div class="item-img">
             <img src="img/content/normal-drill.jpg" alt="">
           </div>
@@ -128,7 +129,7 @@
           <p class="old-price">22500 Р.</p>
           <a class="new-price" href="#">15500 Р.</a>
         </div>
-        <div class="popular-item">
+        <div class="item">
           <div class="item-img">
             <img src="img/content/thick-drill.jpg" alt="">
           </div>
@@ -140,7 +141,7 @@
           <p class="old-price">30500 Р.</p>
           <a class="new-price" href="#">25500 Р.</a>
         </div>
-        <div class="popular-item new">
+        <div class="item new">
           <div class="item-img">
             <img src="img/content/normal-drill.jpg" alt="">
           </div>
@@ -153,43 +154,49 @@
               <a class="new-price" href="#">12500 Р.</a>
         </div>
       </div>
-      <div class="popular-header container">
-        <h2>Популярные ПРОИзводители:</h2>
-        <a class="catalog-btn" href="#">все производители</a>
+      <div class="container">
+        <div class="popular-header">
+          <h2>Популярные ПРОИзводители:</h2>
+          <a class="catalog-btn" href="#">все производители</a>
+        </div>
       </div>
-      <div class="popular-brands container">
-        <a class="popular-brand" href="#">
-          <img class="brand-logo" src="img/content/bosch.png"
-          alt="bosch">
-        </a>
-        <a class="popular-brand" href="#">
-          <img class="brand-logo" src="img/content/Makita.png"
-          alt="Makita">
-        </a>
-        <a class="popular-brand" href="#">
-          <img class="brand-logo" src="img/content/DeWALT.png"
-          alt="DeWALT">
-        </a>
-        <a class="popular-brand" href="#">
-          <img class="brand-logo" src="img/content/interscol.png"
-          alt="Интерскол">
-        </a>
-        <a class="popular-brand" href="#">
-          <img class="brand-logo" src="img/content/Hitachi.png"
-          alt="Hitachi">
-        </a>
-        <a class="popular-brand" href="#">
-          <img class="brand-logo" src="img/content/LG.png"
-          alt="LG">
-        </a>
-        <a class="popular-brand" href="#">
-          <img class="brand-logo" src="AEG.png"
-          alt="AEG">
-        </a>
-        <a class="popular-brand" href="#">
-          <img class="brand-logo" src="img/content/Metabo.png"
-          alt="Metabo">
-        </a>
+      <div class="popular-brands container clearfix">
+        <div class="brands-first-row">
+          <a class="popular-brand" href="#">
+            <img class="brand-logo" src="img/content/bosch.png"
+            alt="bosch">
+          </a>
+          <a class="popular-brand" href="#">
+            <img class="brand-logo" src="img/content/Makita.png"
+            alt="Makita">
+          </a>
+          <a class="popular-brand" href="#">
+            <img class="brand-logo" src="img/content/DeWALT.png"
+            alt="DeWALT">
+          </a>
+          <a class="popular-brand" href="#">
+            <img class="brand-logo" src="img/content/interscol.png"
+            alt="Интерскол">
+          </a>
+        </div>
+        <div class="brands-second-row">
+          <a class="popular-brand" href="#">
+            <img class="brand-logo" src="img/content/Hitachi.png"
+            alt="Hitachi">
+          </a>
+          <a class="popular-brand" href="#">
+            <img class="brand-logo" src="img/content/LG.png"
+            alt="LG">
+          </a>
+          <a class="popular-brand" href="#">
+            <img class="brand-logo" src="img/content/AEG.png"
+            alt="AEG">
+          </a>
+          <a class="popular-brand" href="#">
+            <img class="brand-logo" src="img/content/Metabo.png"
+            alt="Metabo">
+          </a>
+        </div>
       </div>
       <div class="services">
           <div class="container">
@@ -235,7 +242,7 @@
             </div>
           </div>
       </div>
-      <div class="info-contacts container">
+      <div class="info-contacts container clearfix">
         <article class="info-contacts-left">
           <h2>КОМПАНИЯ «Техномарт»</h2>
           <p>
@@ -264,37 +271,31 @@
     </main>
     <footer>
       <div class="footer-top">
-        <div class="container">
-          <div class="first-row">
-            <a class="logo" href="#">ТЕХНОМАРТ</a>
-            <nav class="footer-main-navigation">
-              <ul>
-                <li><a href="#">Компания</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-            </nav>
+        <div class="first-row container clearfix">
+          <a class="footer-logo" href="#">ТЕХНОМАРТ</a>
+          <ul class="footer-main-navigation">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="second-row container clearfix">
+          <div class="address">
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+              +7 (812) 555-05-55</p>
           </div>
-          <div class="second-row">
-            <div class="address">
-              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                +7 (812) 555-05-55</p>
-            </div>
-            <nav class="footer-promo-menu">
-              <ul>
-                <li><a href="#">Материалы</a></li>
-                <li><a href="#">Техника</a></li>
-                <li><a href="#">Инструмент</a></li>
-                <li><a href="#">Спецпредложения</a></li>
-              </ul>
-            </nav>
-          </div>
+          <ul class="footer-promo-menu">
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="container">
+        <div class="container clearfix">
           <div class="copyright">
             <p>© 2010–2016 Компания «Техномарт» Все права защищены</p>
           </div>

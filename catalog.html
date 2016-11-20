@@ -8,23 +8,22 @@
   <body>
     <header>
       <div class="top-header-block">
-        <div class="container">
+        <div class="container clearfix">
           <a class="logo" href="#">ТЕХНОМАРТ</a>
           <form class="item-search" action="#" method="get">
             <input type="text" name="search" value="" placeholder="Поиск:">
-            <button></button>
           </form>
-          <ul class="user-block">
-            <li class="bookmark-info">Закладки: 0</li>
-            <li class="cart-info">Корзина: 0</li>
-            <li>
-              <a class="order-btn" href="#">Оформить заказ</a>
-            </li>
-          </ul>
+          <div class="user-block">
+              <div class="bookmark-info">Закладки: 0</div>
+              <div class="cart-info">Корзина: 0</div>
+            <div class="order-btn">
+              <a href="#">Оформить заказ</a>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="bottom-header-block">
-        <div class="header-miscellaneous container">
+      <div class="miscellanious-header-block">
+        <div class="container clearfix">
           <div class="about">
             <p>Интернет-магазин строительных материалов и
               инструментов для ремонта</p>
@@ -38,43 +37,41 @@
             </div>
           </div>
           <div class="authorisation-block">
-            <div class="profile-block">
-              <a class="profile-link" href="#">  <!-- ?? -->
-                <img src="http://placehold.it/150x100" alt="user-icon">
-                Равшан Джамшутович
-              </a> <!-- или иконка пользователя всё-таки фон? -->
-              <a class="logout-link" href="#">Выход</a>
-            </div>
-            <div class="orders-block">
-              <a href="#">Мои заказы</a>
-              <a href="#">Личный кабинет</a>
-            </div>
+          	<div class="profile-block">
+          	  <a class="profile-link" href="#">  <!-- ?? -->
+          		<img src="http://placehold.it/150x100" alt="user-icon">
+          		Равшан Джамшутович
+          	  </a> <!-- или иконка пользователя всё-таки фон? -->
+          	  <a class="logout-link" href="#">Выход</a>
+          	</div>
+          	<div class="orders-block">
+          	  <a href="#">Мои заказы</a>
+          	  <a href="#">Личный кабинет</a>
+          	</div>
           </div>
         </div>
+      </div>
+      <div class="navigation-header-block">
         <nav class="header-main-navigation container">
-          <ul>
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
+          <a href="#">Главная</a>
+          <a href="#">Компания</a>
+          <a href="#">Каталог</a>
+          <a href="#">Новости</a>
+          <a href="#">Спецпредложения</a>
+          <a href="#">Доставка</a>
+          <a href="#">Контакты</a>
         </nav>
       </div>
     </header>
     <main>
-      <nav class="breadcrumbs container">
-        <ul>
-          <li><a href="#">Главная</a></li> <!--заменим на картинку в css-->
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Перфораторы</a></li>
-        </ul>
-      </nav>
+      <ul class="breadcrumbs container">
+        <li><a href="#">Главная</a></li> <!--заменим на картинку в css-->
+        <li><a href="#">Каталог</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><a href="#">Перфораторы</a></li>
+      </ul>
       <h1 class="container">ПЕРФОРАТОРЫ</h1>
-      <div class="container">
+      <div class="container clearfix">
         <div class="filters top-bar">
           <p class="filters-header">ФИЛЬТР:</p>
         </div>
@@ -93,49 +90,65 @@
           </div>
         </div>
       </div>
-      <div class="container">
+      <div class="container clearfix">
         <div class="filters">
           <form class="item-filters-list" action="#" method="get">
-            <div class="price-filter">
-              <p class="price-filter-header">ЦЕНА:</p>
+            <fieldset class="price-filter">
+              <legend>ЦЕНА:</legend>
               <div class="price-toggle-block">
                 <img class="whole-price-bar" src="http://placehold.it/150x100"
                   alt="">
                 <img class="selected-price-bar" src="http://placehold.it/150x100"
                   alt="">
-                <div class="minimum-price-point">
-                </div>
-                <div class="maximum-price-point">
-                </div>
+                <div class="minimum-price-point"></div>
+                <div class="maximum-price-point"></div>
               </div>
               <div class="price-input-block">
                 <input type="text" name="minimum-price" value="0" placeholder="0">
                 <input type="text" name="maximum-price" value="30000"
                     placeholder="30000">
               </div>
-            </div>
-            <div class="brand-filter">
-              <p class="brand-filter-header">ПРОИЗВОДИТЕЛИ:</p>
-              <label><input type="checkbox" name="bosch">BOSCH</label>
-              <label><input type="checkbox" name="interskol">ИНТЕРСКОЛ</label>
-              <label><input type="checkbox" name="makita">MAKIta</label>
-              <label><input type="checkbox" name="dewalt">Dewalt</label>
-              <label><input type="checkbox" name="hitachi">Hitachi</label>
-            </div>
-            <div class="power-filter">
-              <p class="power-filter-header">ПИТАНИЕ:</p>
-              <label><input type="radio" name="acum" value="accumulator">
-                Аккумуляторные</label>
-              <label><input type="radio" name="net" value="network">
-                Сетевые</label>
-            </div>
+            </fieldset>
+            <fieldset class="brand-filter">
+              <legend>ПРОИЗВОДИТЕЛИ:</legend>
+              <ul>
+                <li>
+                  <label><input type="checkbox" name="bosch">BOSCH</label>
+                </li>
+                <li>
+                  <label><input type="checkbox" name="interskol">ИНТЕРСКОЛ</label>
+                </li>
+                <li>
+                  <label><input type="checkbox" name="makita">MAKIta</label>
+                </li>
+                <li>
+                  <label><input type="checkbox" name="dewalt">Dewalt</label>
+                </li>
+                <li>
+                  <label><input type="checkbox" name="hitachi">Hitachi</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="power-filter">
+              <legend>ПИТАНИЕ:</legend>
+              <ul>
+                <li>
+                  <label><input type="radio" name="acum" value="accumulator">
+                  Аккумуляторные</label>
+                </li>
+                <li>
+                  <label><input type="radio" name="net" value="network">
+                  Сетевые</label>
+                </li>
+              </ul>
+            </fieldset>
             <button class="filter-btn" type="submit">ПОКАЗАТЬ</button>
           </form>
         </div>
         <div class="items-block">
           <div class="items">
             <!-- 1 -->
-            <div class="popular-item">
+            <div class="item">
               <div class="item-img">
                 <img src="img/content/normal-drill.jpg" alt="">
               </div>
@@ -147,7 +160,7 @@
               <p class="old-price">22500 Р.</p>
               <a class="new-price" href="#">15500 Р.</a>
             </div>
-            <div class="popular-item">
+            <div class="item">
               <div class="item-img">
                 <img src="img/content/thick-drill.jpg" alt="">
               </div>
@@ -159,7 +172,7 @@
               <p class="old-price">30500 Р.</p>
               <a class="new-price" href="#">25500 Р.</a>
             </div>
-            <div class="popular-item new">
+            <div class="item new">
               <div class="item-img">
                 <img src="img/content/normal-drill.jpg" alt="">
               </div>
@@ -172,7 +185,7 @@
               <a class="new-price" href="#">12500 Р.</a>
             </div>
             <!-- 2 -->
-            <div class="popular-item">
+            <div class="item">
               <div class="item-img">
                 <img src="img/content/normal-drill.jpg" alt="">
               </div>
@@ -184,7 +197,7 @@
               <p class="old-price">22500 Р.</p>
               <a class="new-price" href="#">15500 Р.</a>
             </div>
-            <div class="popular-item new">
+            <div class="item new">
               <div class="item-img">
                 <img src="img/content/thick-drill.jpg" alt="">
               </div>
@@ -196,7 +209,7 @@
               <p class="old-price">30500 Р.</p>
               <a class="new-price" href="#">25500 Р.</a>
             </div>
-            <div class="popular-item">
+            <div class="item">
               <div class="item-img">
                 <img src="img/content/normal-drill.jpg" alt="">
               </div>
@@ -209,7 +222,7 @@
               <a class="new-price" href="#">12500 Р.</a>
             </div>
             <!-- 3 -->
-            <div class="popular-item new">
+            <div class="item new">
               <div class="item-img">
                 <img src="img/content/normal-drill.jpg" alt="">
               </div>
@@ -221,7 +234,7 @@
               <p class="old-price">22500 Р.</p>
               <a class="new-price" href="#">15500 Р.</a>
             </div>
-            <div class="popular-item">
+            <div class="item">
               <div class="item-img">
                 <img src="img/content/thick-drill.jpg" alt="">
               </div>
@@ -233,7 +246,7 @@
               <p class="old-price">30500 Р.</p>
               <a class="new-price" href="#">25500 Р.</a>
             </div>
-            <div class="popular-item">
+            <div class="item">
               <div class="item-img">
                 <img src="img/content/normal-drill.jpg" alt="">
               </div>
@@ -270,37 +283,31 @@
     </main>
     <footer>
       <div class="footer-top">
-        <div class="container">
-          <div class="first-row">
-            <a class="logo" href="#">ТЕХНОМАРТ</a>
-            <nav class="footer-main-navigation">
-              <ul>
-                <li><a href="#">Компания</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Каталог</a></li>
-                <li><a href="#">Доставка</a></li>
-                <li><a href="#">Контакты</a></li>
-              </ul>
-            </nav>
+        <div class="first-row container clearfix">
+          <a class="footer-logo" href="#">ТЕХНОМАРТ</a>
+          <ul class="footer-main-navigation">
+            <li><a href="#">Компания</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="second-row container clearfix">
+          <div class="address">
+            <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+              +7 (812) 555-05-55</p>
           </div>
-          <div class="second-row">
-            <div class="address">
-              <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
-                +7 (812) 555-05-55</p>
-            </div>
-            <nav class="footer-promo-menu">
-              <ul>
-                <li><a href="#">Материалы</a></li>
-                <li><a href="#">Техника</a></li>
-                <li><a href="#">Инструмент</a></li>
-                <li><a href="#">Спецпредложения</a></li>
-              </ul>
-            </nav>
-          </div>
+          <ul class="footer-promo-menu">
+            <li><a href="#">Материалы</a></li>
+            <li><a href="#">Техника</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a href="#">Спецпредложения</a></li>
+          </ul>
         </div>
       </div>
       <div class="footer-bottom">
-        <div class="container">
+        <div class="container clearfix">
           <div class="copyright">
             <p>© 2010–2016 Компания «Техномарт» Все права защищены</p>
           </div>
