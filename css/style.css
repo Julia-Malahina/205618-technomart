@@ -889,59 +889,127 @@ main {
 
 /*снова общее*/
 footer {
-  min-height: 20px;
+  font-family: 'Cuprum';
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
   outline: 2px dashed green;
   background-color: yellow;
 }
 
-footer ul {
-  margin: 0;
-  padding: 0;
-}
-
 .footer-top {
+  padding: 0;
   background-color: #32425c;
 }
 
 .first-row {
-  padding-top: 40px;
   margin: 0;
   border: 1px solid transparent;
-  outline: 1px dashed white;
 }
 
 .footer-logo {
   width: 220px;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  display: block;
   float: left;
 
-  outline: 1px dashed pink;
+  font-size: 24px;
+  line-height: 24px;
+  color: inherit;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
 }
 
-.footer-main-navigation {
+ul.footer-main-navigation {
   width: 550px;
   float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+}
 
-  outline: 1px dashed pink;
+.footer-main-navigation li {
+  display: inline-block;
+  padding-top: 40px;
+  padding-right: 59px;
+
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: top;
+}
+
+
+.footer-main-navigation li:last-child {
+  padding-right: 0;
+}
+
+.footer-main-navigation a {
+  display: block;
+  color: inherit;
+  text-decoration: none;
 }
 
 .second-row {
   padding-top: 37px;
   border: 1px solid transparent;
-  outline: 1px dashed white;
 }
 
 .address {
   width: 335px;
   float: left;
+  padding: 0;
+}
 
-  outline: 1px dashed pink;
+.address p {
+  margin: 0;
+  padding: 0;
 }
 
 .footer-promo-menu {
   width: 525px;
   float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+}
 
-  outline: 1px dashed pink;
+.footer-promo-menu li {
+  display: inline-block;
+  padding-right: 59px;
+  font-size: 18px;
+  line-height: 24px;
+  vertical-align: bottom;
+}
+
+.footer-promo-menu li:last-child {
+  padding-right: 0;
+}
+
+.footer-promo-menu a {
+  color: #ffd180;
+  text-decoration: none;
+}
+
+.footer-main-navigation a:hover,
+.footer-promo-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-main-navigation a:active {
+  color: #8b96a4;
+  text-decoration: none;
+}
+
+.footer-promo-menu a:active {
+  color: #998a6e;
+  text-decoration: none;
 }
 
 .footer-bottom {
@@ -952,6 +1020,10 @@ footer ul {
 .footer-bottom-content {
   padding-top: 38px;
   padding-bottom: 38px;
+
+  font-size: 16px;
+  line-height: normal;
+
   border: 1px solid transparent;
 
   outline: 1px dashed white;
@@ -960,19 +1032,55 @@ footer ul {
 .copyright {
   width: 240px;
   float: left;
+  padding: 0;
   margin-right: 139px;
-
   outline: 1px dashed white;
 }
 
+.copyright p {
+  padding: 0;
+  margin: 0;
+}
+
 .social {
-  width: 149px;
+  width: auto; /*149*/
   float: left;
+  padding-left: 10px;
   margin-right: 110px;
 
   outline: 1px dashed white;
 }
 
+.social a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin-right: 6px;
+  border-radius: 50%;
+
+  font-size: 0;
+}
+
+.vk {
+  background: #212a3a url("../img/icons-sprite.png") no-repeat;
+  background-position: -791px 10px;
+}
+
+.fb {
+  background: #212a3a url("../img/icons-sprite.png") no-repeat;
+  background-position: -322px 7px;
+}
+
+.ig {
+  background: #212a3a url("../img/icons-sprite.png") no-repeat;
+  background-position: -371px 7px;
+}
+
+.social a:hover,
+.social a:active {
+  background-color: #ee3643;
+}
 .feedback {
   width: 140px;
   float: left;
@@ -986,4 +1094,22 @@ footer ul {
   float: right;
 
   outline: 1px dashed white;
+}
+
+.feedback a,
+.developer a {
+  color: #ffd180;
+  text-decoration: none;
+}
+
+.feedback a:hover,
+.developer a:hover {
+  color: #ffd180;
+  text-decoration: underline;
+}
+
+.feedback a:active,
+.developer a:active {
+  color: #ee3643;
+  text-decoration: none;
 }
