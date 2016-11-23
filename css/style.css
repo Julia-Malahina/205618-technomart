@@ -394,7 +394,7 @@ a.order {
 
 .miscellanious-header-block {
   padding-top: 45px;
-  padding-bottom: 43px;
+  padding-bottom: 39px;
   background-color: #f1f5f7;
   outline: 1px solid yellow;
 }
@@ -424,8 +424,6 @@ a.order {
   padding: 0;
   margin: 0;
   margin-right: 20px;
-
-  outline: 1px solid black;
 }
 
 .header-phone {
@@ -435,7 +433,7 @@ a.order {
   padding-right: 30px;
   padding-bottom: 9px;
   margin: 0;
-  margin-right: 28px;
+  margin-right: 30px;
   margin-bottom: 5px;
   position: relative;
 
@@ -481,8 +479,69 @@ a.order {
 .authorisation-block {
   width: 300px;
   float: right;
+}
 
-  outline: 1px solid black;
+.auth-btn {
+  display: block;
+  padding: 12px 0;
+  margin: 0;
+
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+  text-align: left;
+  text-decoration: none;
+  background-color: #ffffff;
+
+  outline: 1px dashed red;
+}
+
+.login {
+  width: auto;
+  float: left;
+  padding-left: 46px;
+  padding-right: 25px;
+  margin-left: 20px;
+  position:relative;
+}
+
+.login::before {
+  width: 20px;
+  height: 17px;
+
+  position: absolute;
+  top: 14px;
+  left: 16px;
+
+  content: "";
+  background: transparent url("../img/icons-sprite.png") no-repeat;
+  background-position: -441px -5px;
+}
+
+.signin {
+  width: 150px;
+  float: right;
+  margin-left: 10px;
+  text-align: center;
+}
+
+.login:hover,
+.signin:hover {
+  color: #ee3643;
+}
+
+.login:hover::before {
+  background-position: -471px -5px;
+}
+
+.login:active,
+.signin:active {
+  color: #b2b2b2;
+}
+
+.login:active::before {
+  background-position: -441px -5px;
 }
 
 .navigation-header-block {
