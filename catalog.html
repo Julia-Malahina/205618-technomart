@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Каталог перфораторов</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -13,19 +14,23 @@
           <form class="item-search" action="#" method="get">
             <input type="text" name="search" value="" placeholder="Поиск:">
           </form>
-          <div class="user-block">
-              <div class="bookmark-info">Закладки: 0</div>
-              <div class="cart-info">Корзина: 0</div>
-            <div class="order-btn">
-              <a href="#">Оформить заказ</a>
-            </div>
-          </div>
+          <ul class="user-block">
+              <li>
+                <a class="bookmarks" href=#>Закладки: 0</a>
+              </li>
+              <li>
+                <a class="cart" href=#>Корзина: 0</a>
+                </li>
+              <li>
+                <a class="order" href="#">Оформить заказ</a>
+              </li>
+          </ul>
         </div>
       </div>
       <div class="miscellanious-header-block">
         <div class="container clearfix">
           <div class="about">
-            <p>Интернет-магазин строительных материалов и
+            <p>Интернет-магазин строительных материалов <br>и
               инструментов для ремонта</p>
           </div>
           <div class="header-contacts">
@@ -37,12 +42,9 @@
             </div>
           </div>
           <div class="authorisation-block">
-          	<div class="profile-block">
-          	  <a class="profile-link" href="#">  <!-- ?? -->
-          		<img src="http://placehold.it/150x100" alt="user-icon">
-          		Равшан Джамшутович
-          	  </a> <!-- или иконка пользователя всё-таки фон? -->
-          	  <a class="logout-link" href="#">Выход</a>
+            <div class="profile-block">
+          	  <a class="auth-btn profile" href="#">Равшан Джамшутович</a>
+          	  <a class="auth-btn logout" href="#"><p>Выход</p></a>
           	</div>
           	<div class="orders-block">
           	  <a href="#">Мои заказы</a>
@@ -53,17 +55,17 @@
       </div>
       <div class="navigation-header-block">
         <div class="container">
-          <div class="navigation-header-bar">
-            <nav class="header-main-navigation">
-              <a href="#">Главная</a>
-              <a href="#">Компания</a>
-              <a href="#">Каталог</a>
-              <a href="#">Новости</a>
-              <a href="#">Спецпредложения</a>
-              <a href="#">Доставка</a>
-              <a href="#">Контакты</a>
-            </nav>
-          </div>
+          <nav class="main-navigation">
+            <ul class="main-navigation">
+              <li><a href="#">Главная</a></li>
+              <li><a href="#">Компания</a></li>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
