@@ -136,14 +136,6 @@ body {
   color: #000000;
   font-weight: normal;
   font-family: "PT Sans";
-
-   /*перед сдачей проекта удалить эту часть правила*/
-   padding-top: 3px;
-  background: #ffffff
-              url('../img/technomart-index.jpg')
-              no-repeat
-              50% 0;
-  background-size: 1200px;
 }
 
 h1 {
@@ -713,9 +705,6 @@ ul.main-navigation li:active {
 main {
   min-height: 20px;
   border: 1px solid transparent;
-
-  outline: 2px dashed cyan;
-  background-color: blue;
 }
 
 .promo {
@@ -885,6 +874,105 @@ main {
 .info-contacts h2 {
   margin: 0;
   padding: 0;
+}
+
+/*catalog.html*/
+.breadcrumbs {
+  width: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.breadcrumbs li {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+.breadcrumbs a {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 10px;
+  padding-right: 5px;
+  color: #000000;
+  text-decoration: none;
+  border: 1px solid transparent;
+}
+
+.main-header-block {
+  padding-top: 33px;
+  padding-bottom: 33px;
+  padding-left: 30px;
+  margin: 0;
+  background-color: #f2f6f8;
+}
+
+.main-header-block h1 {
+  padding: 0;
+  margin: 0;
+}
+
+.top-bar {
+  padding: 0;
+  background-color: #f7f3ec;
+}
+
+.filters-left {
+  width: 220px;
+  float: left;
+  margin-right: 20px;
+  outline: 1px dashed pink;
+}
+
+
+p.filters-header {
+  padding: 0;
+  margin: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+}
+
+.sorting-bar {
+  width: 700px;
+  float: right;
+}
+
+.sorting-filters-list {
+  width: auto;
+  float: right;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-size: 0;
+}
+
+.sorting-filters-list li {
+  display: inline-block;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  vertical-align: top;
+}
+
+.items-block {
+  width: auto;
+  float: right;
+}
+
+.items-description-container {
+  background-color: #f2f6f8;
+}
+
+.items-description {
+  padding: 0;
+  margin: 0;
+  border: 1px solid transparent;
 }
 
 /*снова общее*/
