@@ -491,8 +491,6 @@ a.order {
   text-align: left;
   text-decoration: none;
   background-color: #ffffff;
-
-  outline: 1px dashed red;
 }
 
 .login {
@@ -612,6 +610,27 @@ a.logout {
 
 .logout p:active::before {
     background-position: -501px -5px;
+}
+
+.orders-block {
+    height: 25px;
+    border: 1px solid transparent;
+}
+
+.orders-block a{
+  width: auto;
+  font-size: 16px;
+  line-height: 18px;
+  vertical-align: bottom;
+  color: #32425c;
+}
+
+.orders-block a:hover {
+  color: #ee3643;
+}
+
+.orders-block a:active {
+  color: #c5cad0;
 }
 
 .navigation-header-block {
