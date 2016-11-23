@@ -180,11 +180,6 @@ header {
 
 .top-header-block {
   background-color: #293449;
-  outline: 1px solid white;
-}
-
-.top-header-block:hover {
-  background-color: #212a3a;
 }
 
 .container {
@@ -195,6 +190,12 @@ header {
   margin-right: auto;
 
   outline: 1px dotted cyan;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 .logo {
@@ -235,6 +236,10 @@ header {
   position: relative;
 
   outline: 1px solid darkcyan;
+}
+
+.item-search:hover {
+  background-color: #212a3a;
 }
 
 .item-search::before {
@@ -281,20 +286,110 @@ header {
 
 .item-search input:focus {
   color: #000000;
-
   background-color: #ffffff;
 }
 
 .user-block {
   width: 450px;
   float: left;
-  outline: 1px solid green;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+  font-size: 0;
 }
 
-.clearfix::after {
+.user-block li {
+  display: inline-block;
+  vertical-align: top;
+
+  font-size: 17px;
+  line-height: 18px;
+}
+
+.user-block a {
+  display: block;
+  width: 106px;
+
+  padding-top: 12px;
+  padding-bottom: 12px;
+  position: relative;
+
+  color: inherit;
+  text-decoration: none;
+}
+
+a.bookmarks {
+  padding-left: 44px;
+}
+
+.bookmarks::before {
+  width: 14px;
+  height: 16px;
+
+  position: absolute;
+  top: 13px;
+  left: 17px;
+
   content: "";
-  display: table;
-  clear: both;
+  background: transparent url("../img/icons-sprite.png") no-repeat;
+  background-position: -85px -5px;
+  opacity: 0.3;
+}
+
+a.cart {
+  width: 100px;
+  padding-left: 50px;
+}
+
+.cart::before {
+  width: 17px;
+  height: 16px;
+
+  position: absolute;
+  top: 13px;
+  left: 17px;
+
+  content: "";
+  background: transparent url("../img/icons-sprite.png") no-repeat;
+  background-position: -109px -5px;
+  opacity: 0.3;
+}
+
+.bookmarks:hover,
+.cart:hover {
+  background-color: #212a3a;
+}
+
+.bookmarks:hover::before,
+.cart:hover::before {
+  opacity: 1;
+}
+
+.bookmarks:active,
+.cart:active {
+  color: #babbbd;
+  background-color: #161d29;
+}
+
+.bookmarks:active::before,
+.cart:active::before {
+  opacity: 0.5;
+}
+
+a.order {
+  width: 150px;
+  text-align: center;
+  background-color: #63a63e;
+}
+
+.order:hover {
+  background-color: #5fbb2d;
+}
+
+.order:active {
+  color: #b7c9af;
+  background-color: #518534;
 }
 
 .miscellanious-header-block {
@@ -305,19 +400,82 @@ header {
 }
 
 .about {
-  width: 300px;
+  width: 198px;
   float: left;
+  padding-top: 6px;
+  padding-left: 52px;
+  padding-right: 50px;
+  margin-right: 20px;
+
+  color: #ee3643;
+  font-size: 16px;
+  line-height: 23px;
+  font-style: italic;
+}
+
+.about p {
+  padding: 0;
+  margin: 0;
+}
+
+.header-contacts {
+  width: auto; /*300px;*/
+  float: left;
+  padding: 0;
+  margin: 0;
   margin-right: 20px;
 
   outline: 1px solid black;
 }
 
-.header-contacts {
-  width: 300px;
-  float: left;
-  margin-right: 20px;
+.header-phone {
+  width: 180px;
+  padding-left: 54px;
+  padding-top: 9px;
+  padding-right: 30px;
+  padding-bottom: 9px;
+  margin: 0;
+  margin-right: 28px;
+  margin-bottom: 5px;
+  position: relative;
 
-  outline: 1px solid black;
+  color: #e9292a;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+
+  border: 3px solid white;
+}
+
+.header-phone p {
+  padding: 0;
+  margin: 0;
+}
+
+.header-phone::before {
+  width: 19px;
+  height: 19px;
+
+  position: absolute;
+  top: 12px;
+  left: 12px;
+
+  content: "";
+  background: transparent url("../img/icons-sprite.png") no-repeat;
+  background-position: -563px -5px;
+}
+
+.header-address {
+  width: 270px;
+  font-size: 14px;
+  line-height: 24px;
+  color: #32425c;
+  text-align: center;
+}
+
+.header-address p {
+  padding: 0;
+  margin: 0;
 }
 
 .authorisation-block {
