@@ -1,0 +1,840 @@
+/*Подключаем шрифты*/
+/*Cuprum*/
+@font-face {
+  font-family: 'Cuprum-Regular';
+  src: url('../fonts/cuprum/CuprumRegular/Cuprum-Regular.eot');
+  src: url('../fonts/cuprum/CuprumRegular/Cuprum-Regular.woff2') format('woff2'),
+       url('../fonts/cuprum/CuprumRegular/Cuprum-Regular.woff') format('woff'),
+       url('../fonts/cuprum/CuprumRegular/Cuprum-Regular.ttf') format('truetype'),
+       url('../fonts/cuprum/CuprumRegular/Cuprum-Regular.svg#Cuprum-Regular') format('svg'),
+       url('../fonts/cuprum/CuprumRegular/Cuprum-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cuprum-Bold';
+  src: url('../fonts/cuprum/CuprumBold/Cuprum-Bold.eot');
+  src: url('../fonts/cuprum/CuprumBold/Cuprum-Bold.woff2') format('woff2'),
+       url('../fonts/cuprum/CuprumBold/Cuprum-Bold.woff') format('woff'),
+       url('../fonts/cuprum/CuprumBold/Cuprum-Bold.ttf') format('truetype'),
+       url('../fonts/cuprum/CuprumBold/Cuprum-Bold.svg#Cuprum-Bold') format('svg'),
+       url('../fonts/cuprum/CuprumBold/Cuprum-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cuprum-Italic';
+  src: url('../fonts/cuprum/CuprumItalic/Cuprum-Italic.eot');
+  src: url('../fonts/cuprum/CuprumItalic/Cuprum-Italic.woff2') format('woff2'),
+       url('../fonts/cuprum/CuprumItalic/Cuprum-Italic.woff') format('woff'),
+       url('../fonts/cuprum/CuprumItalic/Cuprum-Italic.ttf') format('truetype'),
+       url('../fonts/cuprum/CuprumItalic/Cuprum-Italic.svg#Cuprum-Italic') format('svg'),
+       url('../fonts/cuprum/CuprumItalic/Cuprum-Italic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Cuprum-BoldItalic';
+  src: url('../fonts/cuprum/CuprumBoldItalic/Cuprum-BoldItalic.eot');
+  src: url('../fonts/cuprum/CuprumBoldItalic/Cuprum-BoldItalic.woff2') format('woff2'),
+       url('../fonts/cuprum/CuprumBoldItalic/Cuprum-BoldItalic.woff') format('woff'),
+       url('../fonts/cuprum/CuprumBoldItalic/Cuprum-BoldItalic.ttf') format('truetype'),
+       url('../fonts/cuprum/CuprumBoldItalic/Cuprum-BoldItalic.svg#Cuprum-BoldItalic') format('svg'),
+       url('../fonts/cuprum/CuprumBoldItalic/Cuprum-BoldItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*PT Sans*/
+@font-face {
+  font-family: 'PTSans-Regular';
+  src: url('../fonts/ptsans/PTSansRegular/PTSans-Regular.woff') format('woff'),
+       url('../fonts/ptsans/PTSansBold/PTSans-Web-Regular.ttf') format('truetype'),
+       url('../fonts/ptsans/PTSansRegular/PTSans-Regular.svg#PTSans-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT_Sans-Web-Regular';
+  src: url('../fonts/ptsans/PTSansRegular/PT_Sans-Web-Regular.eot');
+  src: url('../fonts/ptsans/PTSansRegular/PT_Sans-Web-Regular.woff2') format('woff2'),
+       url('../fonts/ptsans/PTSansRegular/PT_Sans-Web-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans-Bold';
+  src: url('../fonts/ptsans/PTSansBold/PTSans-Bold.woff') format('woff'),
+       url('../fonts/ptsans/PTSansBold/PTSans-Bold.ttf') format('truetype'),
+       url('../fonts/ptsans/PTSansBold/PTSans-Bold.svg#PTSans-Bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT_Sans-Web-Bold';
+  src: url('../fonts/ptsans/PTSansBold/PT_Sans-Web-Bold.eot');
+  src: url('../fonts/ptsans/PTSansBold/PT_Sans-Web-Bold.woff2') format('woff2'),
+       url('../fonts/ptsans/PTSansBold/PT_Sans-Web-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans-Italic';
+  src: url('../fonts/ptsans/PTSansItalic/PTSans-Italic.woff') format('woff'),
+       url('../fonts/ptsans/PTSansItalic/PTSans-Italic.ttf') format('truetype'),
+       url('../fonts/ptsans/PTSansItalic/PTSans-Italic.svg#PTSans-Italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT_Sans-Web-Italic';
+  src: url('../fonts/ptsans/PTSansItalic/PT_Sans-Web-Italic.eot');
+  src: url('../fonts/ptsans/PTSansItalic/PT_Sans-Web-Italic.woff2') format('woff2'),
+       url('../fonts/ptsans/PTSansItalic/PT_Sans-Web-Italic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PTSans-BoldItalic';
+  src: url('../fonts/ptsans/PTSansBoldItalic/PTSans-BoldItalic.woff') format('woff'),
+       url('../fonts/ptsans/PTSansBoldItalic/PTSans-BoldItalic.ttf') format('truetype'),
+       url('../fonts/ptsans/PTSansBoldItalic/PTSans-BoldItalic.svg#PTSans-BoldItalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT_Sans-Web-BoldItalic';
+  src: url('../fonts/ptsans/PTSansBoldItalic/PT_Sans-Web-BoldItalic.eot');
+  src: url('../fonts/ptsans/PTSansBoldItalic/PT_Sans-Web-BoldItalic.woff2') format('woff2'),
+       url('../fonts/ptsans/PTSansBoldItalic/PT_Sans-Web-BoldItalic.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/*А теперь стили*/
+/*Строим сеточку*/
+/*common, header*/
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.top-header-block {
+  width: 100%; /*потом поправим*/
+  height: 42px; /*42px на самом деле*/
+  padding-top: 12px;
+  background-color: #293449;
+}
+
+.container {
+  width: 940px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.logo {
+  width: 220px;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.item-search {
+  width: 270px;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.user-block {
+  width: 450px;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.user-block > div {
+  width: 150px;
+  float: left;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.miscellanious-header-block {
+  width: 100%;
+  height: auto;
+  padding-top: 45px;
+  padding-bottom: 13px;
+  background-color: #f1f5f7;
+}
+
+.about {
+  width: 196px;
+  height: 70px; /*текст умещается в 60 по высоте*/
+  float: left;
+  margin-left: 44px;
+  margin-right: 65px;
+}
+
+.header-contacts {
+  width: 270px;
+  height: 70px;
+  float: left;
+  margin-right: 65px;
+}
+
+.authorisation-block {
+  width: 300px;
+  height: 70px;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.navigation-header-block {
+  width: 100%;
+  height: auto;
+  padding-top: 25px;
+  padding-bottom: 60px;
+  background-color: #f1f5f7;
+}
+
+.navigation-header-bar {
+    width: 100%;
+    height: 60px;
+    background-color: #32425c;
+}
+
+.header-main-navigation {
+  width: auto%
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*index.html*/
+.promo {
+  width: 100%;
+  height: auto; /*410px ждем вёрстки слайдера*/
+  margin-top: 60px;
+  margin-bottom: 55px;
+}
+
+.promo-top {
+  margin-bottom: 20px;
+}
+
+.promo-card {
+  width: 300px;
+  height: 123px;
+}
+
+.promo-material,
+.promo-tools {
+  float: left;
+  margin-right: 20px;
+}
+
+.promo-equipment,
+.promo-discounts,
+.promo-delivery {
+  float: right;
+}
+
+.promo-material {
+  background-color: #f6b22d;
+}
+
+.promo-tools {
+  background-color: #4aafde;
+}
+
+.promo-equipment {
+  background-color: #cc79d1;
+}
+
+.promo-discounts {
+  margin-bottom: 20px;
+  background-color: #85d179;
+}
+
+.promo-delivery {
+  background-color: #f6b22d;
+}
+
+.promo .slider {
+  width: 620px;
+  margin-right: 20px;
+  float: left;
+}
+
+.popular-header-block {
+  width: 940px;
+  height: 89px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #f7f3ec;
+}
+
+.popular-header-block h2 {
+  width: auto;
+  height: auto;
+  float: left;
+  margin-top: 29px;
+  margin-left: 30px;
+
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  font-weight: normal;
+  font-family: "Cuprum";
+  text-transform: uppercase;
+}
+
+.popular-header-block a {
+  width: auto;
+  height: 38px;
+  float: right;
+  margin-top: 25px;
+  margin-right: 30px;
+}
+
+.popular-items {
+  margin-top: 20px;
+}
+
+.item {
+  width: 218px; /*вместе с границей - 220*/
+  height: 316px; /*вместе с границей - 318*/
+  float: left;
+  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  border: 1px solid #e5e5e5;
+}
+
+.popular-items .item:last-child {
+  float: right;
+  margin-right: 0;
+}
+
+.popular-brands {
+  margin-top: 20px;
+  margin-bottom: 85px;
+}
+
+.popular-brand {
+  width: 218px; /*вместе с границей - 220*/
+  height: 143px; /*вместе с границей - 145*/
+  float: left;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 1px solid #e5e5e5;
+}
+
+.popular-brand:nth-child(4n+0) {
+  float: right;
+  margin-right: 0;
+}
+
+.brands-first-row .popular-brand {
+  margin-bottom: 20px;
+}
+
+.services {
+  width: 100%;
+  height: auto; /*поправить потом*/
+  padding-top: 32px;
+  padding-bottom: 25px;
+  background-color: #f2f6f8;
+}
+
+.services-header {
+  width: 410px;
+  height: 98px;
+  margin-bottom: 30px;
+}
+
+.features {
+  width: 100%;
+  height: auto;
+}
+
+.info-contacts {
+  height: auto;
+  padding-top: 52px;/*надо ещё разобраться с внутренними отступами будет*/
+  padding-bottom: 87px;
+}
+
+.info-contacts-left {
+  width: 520px;
+  height: auto;
+  float: left;
+}
+
+.info-contacts-right {
+  width: 300px;
+  height: auto;
+  float: right;
+}
+
+/*catalog.html*/
+.breadcrumbs > li {
+  width: auto; /*исправить после появления иконок*/
+  height: auto;
+  float: left;
+  margin-right: 22px;
+}
+
+.main-header-block {
+  width: 940px;
+  height: 87px;/*89px*/
+  margin-top: 22px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 20px;
+  border: 1px solid #f2f6f8;
+  background-color: #f2f6f8;
+}
+
+.main-header-block h1 {
+  margin-top: 29px;
+  margin-left: 30px;
+}
+
+.filters {
+  width: 220px; /*220 in total*/
+  float: left;
+  margin-right: 20px;
+}
+
+.sorting-bar {
+  width: 700px; /*700 in total */
+  float: right;
+}
+
+.top-bar {
+  height: 38px; /*38px in total*/
+  margin-bottom: 20px;
+  background-color: #f7f3ec;
+  vertical-align: middle;
+}
+
+.filters-header {
+  width: 100px;
+  height: auto;
+  float: left;
+  margin-right: 0px; /*после стрелочек*/
+  margin-left: 20px;
+}
+
+.sorting-filters {
+  width: auto; /*поправим, когда будут стрелочки*/
+  height: auto;
+  float: left;
+  margin-right: 25px; /*45px*/
+  vertical-align: middle;
+}
+
+.sorting-filters-list {
+  width: 360px;
+  height: auto;
+  float: right;
+  margin-right: 0;
+}
+
+.sorting-filter {
+  width: 120px;
+  height: auto;
+  float: left;
+  margin-right: 0;
+}
+
+.show-methods {
+  width: auto;
+  height: auto;
+  float: right;
+}
+
+.items-block {
+  width: 700px;
+  height: auto;
+  float: right;
+}
+
+.items-block .item:nth-child(3n+0) {
+  float: right;
+  margin-right: 0;
+}
+
+.pagination {
+  width: 290px;
+  height: 38px;
+  float: left;
+  margin-right:
+}
+
+.pagination > li {
+  width: 38px;
+  height: 38px;
+  float: left;
+  margin-right: 12px;
+}
+
+.pagination > li.last-child {
+  width: 140px;
+  height: 38px;
+  margin-right: 0;
+}
+
+.items-type-info {
+  height: auto; /*261px in total*/
+  padding-top: 38px;
+  padding-bottom: 70px;
+
+  background-color: #f2f6f8;
+}
+
+/*footer*/
+.footer-top {
+  width: 100%;
+  height: auto; /*поправить потом*/
+  background-color: #32425c;
+}
+
+.footer-logo {
+  width: 220px;
+  height: auto;
+  float: left;
+}
+
+.footer-main-navigation {
+  width: 555px;
+  height: auto;
+  float: right;
+}
+
+.footer-main-navigation > li {
+  width: auto; /*потом исправим*/
+  height: auto;
+  float: left;
+  margin-right: 2px; /*потом подберу*/
+}
+
+.address {
+  width: 325px;
+  float: left;
+  margin-right: 20px;
+}
+
+.footer-promo-menu {
+  width: 525px;
+  float: right;
+}
+
+.footer-promo-menu > li {
+  width: auto; /*потом исправим*/
+  height: auto;
+  float: left;
+  margin-right: 2px; /*потом подберу*/
+}
+
+.footer-bottom {
+  width: 100%;
+  height: auto;
+  background-color: #293449;
+}
+
+.copyright {
+  width: 235px;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+}
+
+.social {
+  width: 132px;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+}
+
+.feedback {
+  width: 142px;
+  height: auto;
+  float: left;
+  margin-right: 20px;
+}
+
+.developer {
+  width: 104px;
+  height: auto;
+  float: right;
+}
+
+/*Стили текста*/
+body {
+  font-size: 13px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: normal;
+  font-family: "PT Sans";
+}
+
+h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  font-weight: normal;
+  font-family: "Cuprum";
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 30px;
+  line-height: 24px;
+  color: #000000;
+  font-weight: normal;
+  font-family: "Cuprum";
+  text-transform: uppercase;
+}
+
+
+
+======================================
+ВСПОМОГАТЕЛЬНЫЙ CSS
+======================================
+
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-check_mark {
+    width: 39px;
+    height: 30px;
+    background-position: -5px -5px;
+}
+
+.sprite-cross {
+    width: 21px;
+    height: 21px;
+    background-position: -54px -5px;
+}
+
+.sprite-icon-bookmark {
+    width: 14px;
+    height: 16px;
+    background-position: -85px -5px;
+}
+
+.sprite-icon-cart {
+    width: 17px;
+    height: 16px;
+    background-position: -109px -5px;
+}
+
+.sprite-icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -136px -5px;
+}
+
+.sprite-icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -169px -5px;
+}
+
+.sprite-icon-circle {
+    width: 25px;
+    height: 25px;
+    background-position: -206px -5px;
+}
+
+.sprite-icon-circle-dot {
+    width: 25px;
+    height: 25px;
+    background-position: -241px -5px;
+}
+
+.sprite-icon-down-dir {
+    width: 11px;
+    height: 10px;
+    background-position: -276px -5px;
+}
+
+.sprite-icon-down-dir-active {
+    width: 9px;
+    height: 9px;
+    background-position: -297px -5px;
+}
+
+.sprite-icon-down-dir-hover {
+    width: 11px;
+    height: 10px;
+    background-position: -316px -5px;
+}
+
+.sprite-icon-facebook {
+    width: 10px;
+    height: 18px;
+    background-position: -337px -5px;
+}
+
+.sprite-icon-home {
+    width: 15px;
+    height: 12px;
+    background-position: -357px -5px;
+}
+
+.sprite-icon-instagramm {
+    width: 17px;
+    height: 17px;
+    background-position: -382px -5px;
+}
+
+.sprite-icon-left {
+    width: 22px;
+    height: 40px;
+    background-position: -409px -5px;
+}
+
+.sprite-icon-login {
+    width: 20px;
+    height: 17px;
+    background-position: -441px -5px;
+}
+
+.sprite-icon-login-hover {
+    width: 20px;
+    height: 17px;
+    background-position: -471px -5px;
+}
+
+.sprite-icon-logout {
+    width: 21px;
+    height: 17px;
+    background-position: -501px -5px;
+}
+
+.sprite-icon-logout-hover {
+    width: 21px;
+    height: 17px;
+    background-position: -532px -5px;
+}
+
+.sprite-icon-phone {
+    width: 19px;
+    height: 19px;
+    background-position: -563px -5px;
+}
+
+.sprite-icon-right {
+    width: 22px;
+    height: 40px;
+    background-position: -592px -5px;
+}
+
+.sprite-icon-search-focus {
+    width: 17px;
+    height: 17px;
+    background-position: -624px -5px;
+}
+
+.sprite-icon-search-hover {
+    width: 17px;
+    height: 17px;
+    background-position: -651px -5px;
+}
+
+.sprite-icon-up-dir {
+    width: 11px;
+    height: 10px;
+    background-position: -678px -5px;
+}
+
+.sprite-icon-up-dir-active {
+    width: 11px;
+    height: 10px;
+    background-position: -699px -5px;
+}
+
+.sprite-icon-up-dir-hover {
+    width: 11px;
+    height: 10px;
+    background-position: -720px -5px;
+}
+
+.sprite-icon-user {
+    width: 20px;
+    height: 18px;
+    background-position: -741px -5px;
+}
+
+.sprite-icon-user-hover {
+    width: 20px;
+    height: 18px;
+    background-position: -771px -5px;
+}
+
+.sprite-icon-vk {
+    width: 20px;
+    height: 12px;
+    background-position: -801px -5px;
+}
+
+.promo-sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.promo-sprite-background-promo-basket {
+    width: 59px;
+    height: 72px;
+    background-position: -6px -6px;
+}
+
+.promo-sprite-background-promo-drill {
+    width: 75px;
+    height: 61px;
+    background-position: -77px -6px;
+}
+
+.promo-sprite-background-promo-materials {
+    width: 44px;
+    height: 65px;
+    background-position: -164px -6px;
+}
+
+.promo-sprite-background-promo-tractor {
+    width: 78px;
+    height: 62px;
+    background-position: -220px -6px;
+}
+
+.promo-sprite-background-promo-truck {
+    width: 78px;
+    height: 63px;
+    background-position: -310px -6px;
+}
