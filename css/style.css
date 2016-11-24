@@ -759,7 +759,6 @@ main {
   float: left;
 }
 
-
 .popular-header-block {
   padding-top: 25px;
   padding-right: 24px;
@@ -919,50 +918,89 @@ main {
 
 .top-bar {
   padding: 0;
-  background-color: #f7f3ec;
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /*background-color: #f7f3ec;*/
+
+  outline: 1px solid green;
 }
 
-.filters-left {
-  width: 220px;
+.top-bar-left {
+  width: auto;
   float: left;
   margin-right: 20px;
+
+  background-color: #f7f3ec;
+
   outline: 1px dashed pink;
 }
 
-
 p.filters-header {
+  width: 200px;
   padding: 0;
-  margin: 0;
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 20px;
+  margin: 0;
+
+  outline: 1px yellow;
 }
 
-.sorting-bar {
+.top-bar-right {
   width: 700px;
-  float: right;
-}
-
-.sorting-filters-list {
-  width: auto;
   float: right;
   padding: 0;
   margin: 0;
   list-style: none;
   font-size: 0;
+  background-color: #f7f3ec;
+
+  outline: 1px dashed pink;
 }
 
-.sorting-filters-list li {
+.top-bar-right li {
   display: inline-block;
   font-size: 13px;
   line-height: 18px;
-  text-transform: uppercase;
   vertical-align: top;
 }
 
+.filters-items {
+  margin-top:0;
+  margin-bottom: 60px;
+}
+
+.filters {
+  width: 220px;
+  float: left;
+  margin-right: 20px;
+  outline: 1px dashed green;
+}
+
 .items-block {
-  width: auto;
+  width: 700px;
   float: right;
+  outline: 1px dashed green;
+}
+
+.items {
+
+  outline: 2px solid red;
+}
+
+.items .item {
+  margin-bottom: 20px;
+}
+
+.items .item:nth-child(3n+0) {
+  margin-right: 0;
+}
+
+.pagination {
+  margin-top: 32px;
+  margin-bottom: 0;
+  outline: 2px dashed blue;
 }
 
 .items-description-container {
@@ -981,7 +1019,6 @@ footer {
   font-size: 18px;
   line-height: 24px;
   color: #ffffff;
-  outline: 2px dashed green;
   background-color: yellow;
 }
 
@@ -1031,7 +1068,6 @@ ul.footer-main-navigation {
   line-height: 24px;
   vertical-align: top;
 }
-
 
 .footer-main-navigation li:last-child {
   padding-right: 0;
@@ -1113,8 +1149,6 @@ ul.footer-main-navigation {
   line-height: normal;
 
   border: 1px solid transparent;
-
-  outline: 1px dashed white;
 }
 
 .copyright {
@@ -1122,7 +1156,6 @@ ul.footer-main-navigation {
   float: left;
   padding: 0;
   margin-right: 139px;
-  outline: 1px dashed white;
 }
 
 .copyright p {
@@ -1135,8 +1168,6 @@ ul.footer-main-navigation {
   float: left;
   padding-left: 10px;
   margin-right: 110px;
-
-  outline: 1px dashed white;
 }
 
 .social a {
@@ -1146,7 +1177,6 @@ ul.footer-main-navigation {
   float: left;
   margin-right: 6px;
   border-radius: 50%;
-
   font-size: 0;
 }
 
@@ -1169,19 +1199,22 @@ ul.footer-main-navigation {
 .social a:active {
   background-color: #ee3643;
 }
+
 .feedback {
   width: 140px;
   float: left;
   margin-right: 50px;
-
-  outline: 1px dashed white;
 }
 
 .developer {
   width: 110px;
   float: right;
+}
 
-  outline: 1px dashed white;
+.feedback p,
+.developer p {
+  padding: 0;
+  margin: 0;
 }
 
 .feedback a,

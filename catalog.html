@@ -85,26 +85,24 @@
       </div>
       <div class="container">
         <div class="top-bar clearfix">
-          <div class="filters-left">
+          <div class="top-bar-left">
             <p class="filters-header">ФИЛЬТР:</p>
           </div>
-          <div class="sorting-bar">
-            <ul ="sorting-filters-list">
-              <li>
-                <p class="filters-header">СОРТИРОВКА:</p>
-              </li>
-              <li class="sorting-filter"><a href="#">ПО ЦЕНЕ</a></li>
-              <li class="sorting-filter"><a href="#">ПО ТИПУ</a></li>
-              <li class="sorting-filter"><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
-              <li><a href="#">Вверх</a></li>
-              <li><a href="#">Вниз</a></li>
-            </ul>
-          </div>
+          <ul class="top-bar-right">
+            <li>
+              <p class="filters-header">СОРТИРОВКА:</p>
+            </li>
+            <li class="sorting-filter"><a href="#">ПО ЦЕНЕ</a></li>
+            <li class="sorting-filter"><a href="#">ПО ТИПУ</a></li>
+            <li class="sorting-filter"><a href="#">ПО ФУНКЦИОНАЛУ</a></li>
+            <li>Вверх</li>
+            <li>Вниз</li>
+          </ul>
         </div>
       </div>
       <div class="container">
-        <div class="filters-container clearfix">
-          <div class="filters-left filters">
+        <div class="filters-items clearfix">
+          <div class="filters">
             <form class="item-filters-list" action="#" method="get">
               <fieldset class="price-filter">
                 <legend>ЦЕНА:</legend>
@@ -159,7 +157,7 @@
             </form>
           </div>
           <div class="items-block">
-            <div class="items">
+            <div class="items clearfix">
               <!-- 1 -->
               <div class="item">
                 <div class="item-img">
@@ -273,11 +271,11 @@
               </div>
             </div>
             <ul class="pagination">
-              <li class="filter-btn"><a href="#">1</a></li>
-              <li class="filter-btn"><a href="#">2</a></li>
-              <li class="filter-btn"><a href="#">3</a></li>
-              <li class="filter-btn"><a href="#">СЛЕДУЮЩАЯ</a></li>
-            </ul>
+            <li class="filter-btn"><a href="#">1</a></li>
+            <li class="filter-btn"><a href="#">2</a></li>
+            <li class="filter-btn"><a href="#">3</a></li>
+            <li class="filter-btn"><a href="#">СЛЕДУЮЩАЯ</a></li>
+          </ul>
           </div>
         </div>
       </div>
